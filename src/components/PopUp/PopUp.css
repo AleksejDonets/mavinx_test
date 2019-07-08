@@ -1,0 +1,23 @@
+.register-popup-overlay {
+  position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0, .3);
+}
+.register-popup-block{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 250px;
+  height: 180px;
+  background-color: #ffffff;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  left: 50%;
+  top: 10%;
+  transform:translateX(-50%);
+  padding:0 30px;
+}
