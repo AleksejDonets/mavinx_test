@@ -35,8 +35,10 @@ export const userLogin = data => dispatch => {
         localStorage.setItem('token', token)
         dispatch(loginUserSuccess(response.data))
         dispatch(push('/'))
+      }else{
+        dispatch(loginUserError(response.data))
       }
-      dispatch(loginUserError(response.data))
+      
     })
 }
 
